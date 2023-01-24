@@ -2,6 +2,7 @@
 
 $color-primary-cyan: hsl(171, 66%, 44%);
 $color-primary-blue: hsl(233, 100%, 69%);
+$color-neutral-gray: hsl(201, 11%, 66%);
 
 :root {
   --color-primary-cyan: hsl(171, 66%, 44%);
@@ -91,7 +92,7 @@ header {
 
 .usp {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 6.5rem;
 
   h2 {
     margin-bottom: 1rem;
@@ -110,15 +111,32 @@ header {
 }
 
 .features {
-  margin-bottom: 11rem;
+  text-align: center;
+
+  &--one {
+    margin-bottom: 11rem;
+  }
+
+  &--two {
+    margin-bottom: 8.25rem;
+  }
 
   figure {
     margin-bottom: 3.5rem;
   }
 
-  ul {
-    text-align: center;
+  h2 {
+    color: var(--color-neutral-dark-gray);
+    margin-bottom: 1rem;
 
+    & + p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 5.5rem;
+    }
+  }
+
+  ul {
     li:not(:last-child) {
       margin-bottom: 3rem;
     }
@@ -133,10 +151,51 @@ header {
       font-size: 1rem;
       line-height: 1.5;
     }
+
+    img {
+      margin: 0 auto 2.5rem;
+    }
+  }
+}
+
+.companies {
+  margin-bottom: 10.5rem;
+
+  li {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &:not(:first-child) {
+      img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 }
 
 .cta {
+  text-align: center;
+  margin-bottom: 11rem;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: var(--color-neutral-dark-gray);
+  }
+
+  p {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+  }
+
   &__links {
     li {
       a {
@@ -183,6 +242,40 @@ header {
         }
       }
     }
+  }
+}
+
+footer {
+  background-color: lighten($color-neutral-gray, 30%);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+
+  figure {
+    width: 17.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+
+  .site-links {
+    margin-bottom: 3rem;
+
+    li:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: var(--color-neutral-dark-gray);
+    }
+  }
+
+  .social-links {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 

@@ -82,7 +82,7 @@ header p {
 
 .usp {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 6.5rem;
 }
 .usp h2 {
   margin-bottom: 1rem;
@@ -98,13 +98,25 @@ header p {
 }
 
 .features {
+  text-align: center;
+}
+.features--one {
   margin-bottom: 11rem;
+}
+.features--two {
+  margin-bottom: 8.25rem;
 }
 .features figure {
   margin-bottom: 3.5rem;
 }
-.features ul {
-  text-align: center;
+.features h2 {
+  color: var(--color-neutral-dark-gray);
+  margin-bottom: 1rem;
+}
+.features h2 + p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 5.5rem;
 }
 .features ul li:not(:last-child) {
   margin-bottom: 3rem;
@@ -118,7 +130,41 @@ header p {
   font-size: 1rem;
   line-height: 1.5;
 }
+.features ul img {
+  margin: 0 auto 2.5rem;
+}
 
+.companies {
+  margin-bottom: 10.5rem;
+}
+.companies li {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.companies li:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.companies li:not(:first-child) img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta {
+  text-align: center;
+  margin-bottom: 11rem;
+}
+.cta h2 {
+  margin-bottom: 1.5rem;
+  color: var(--color-neutral-dark-gray);
+}
+.cta p {
+  margin-bottom: 3rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
+}
 .cta__links li a {
   position: relative;
   padding-top: 0.925rem;
@@ -153,6 +199,35 @@ header p {
 }
 .cta__links li:last-child a::after {
   background-color: #2e46ff;
+}
+
+footer {
+  background-color: #f4f5f6;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+footer figure {
+  width: 17.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+footer .site-links {
+  margin-bottom: 3rem;
+}
+footer .site-links li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+footer .site-links a {
+  color: var(--color-neutral-dark-gray);
+}
+footer .social-links {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .attribution {
